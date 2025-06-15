@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    height: 100vh;
+    background: url("/Features/coffee-hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar .logo{
+    color: white;
+    font-size: 2.1em;
+    font-weight: 600;
+}
+.navbar .logo span{
+    color: #c06b3e
+}
+.navbar .menu-links{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbar a:hover{
+    color: #c06b3e;
+}
+.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.hero-section .content{
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.hero-section .content h1{
+    font-size: 3rem;
+    max-width: 800px;
+}
+.hero-section .content p{
+    font-weight: 300;
+    margin-top: 20px;
+    max-width: 700px;
+}
+.hero-section .content button {
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 38px;
+    transition: 0.2s ease;
+    color: rgb(54, 5, 5);
+}
+.hero-section .content button:hover{
+    background: #c06b3e;
+    color: #fff;
+}
+#menu-btn{
+    color: #fff;
+    cursor: pointer;
+}
+#close-menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.content .typing{
+    color: #c06b3e;
+}
+@media screen and (max-width: 900px){
+    #close-menu-btn, #menu-btn{
+        display: block;
+    }
+    .navbar .menu-links{
+    position: fixed;
+    left: -260px;
+    top: 0;
+    width: 260px;
+    flex-direction: column;
+    height: 100vh;
+    background: #fff;
+    padding: 70px 40px 0;
+    }
+    .navbar   a{
+        color: #000;
+    }
+}
